@@ -1,6 +1,8 @@
-import express from "express";
+//import express from "express";
+const express = require("express");
 
-import { Contenedor } from "./index.js";
+//import { Contenedor } from "./index.js";
+const Contenedor = require("./index");
 
 const test1 = new Contenedor("productos.txt");
 const item1 = {

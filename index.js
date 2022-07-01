@@ -15,9 +15,11 @@
 // const connectedServer = server.listen(8080, () => {
 //   console.log(`Server running...`);
 // });
-import fs from "fs";
+//import fs from "fs";
+const fs = require("fs");
 
-export class Contenedor {
+//export class Contenedor {
+class Contenedor {
   constructor(archivo) {
     (this.nombre = archivo), (this.id = 1);
   }
@@ -90,6 +92,8 @@ export class Contenedor {
     fs.writeFileSync(`./data/${this.nombre}`, "", "utf-8");
   }
 }
+
+module.exports = Contenedor;
 
 // const test1 = new Contenedor("productos.txt");
 // item1 = {
